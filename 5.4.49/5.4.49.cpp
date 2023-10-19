@@ -52,7 +52,16 @@ int main() {
 	}
 	check.push_back(sumdiag2);
 
-	/*for (int count = 0; count < size; count++) {
-		delete[]matrix[size];
-	}*/
+	bool flg = 1;
+
+	for (vector<int>::iterator it = check.begin(); it != check.end(); it++) {
+		cout << *it << " ";
+	}
+
+
+	if (equal(check.begin() + 1, check.end(), check.begin())) {
+		cout << endl << "Hooray! your matrix is miraculous...";
+	}
+
+
 }
